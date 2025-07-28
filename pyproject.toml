@@ -1,0 +1,22 @@
+[project]
+name = "currency-cli"
+version = "0.1.0"
+description = "CLI tool for converting currencies using NBP API"
+authors = [
+  { name = "Sebastian Kanecki", email = "seb.kan.98@gmail.com" }
+]
+dependencies = [
+    "requests",
+    "typer",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "flake8",
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
